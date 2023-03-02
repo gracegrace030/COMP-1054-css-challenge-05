@@ -1,0 +1,191 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+nav {
+    float: left;
+    width: 20%;
+}
+
+footer {
+    clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+    padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+/* ------------------------------------------------ */
+
+/* Fonts */
+
+@font-face {
+    font-family: LibreBaskerville-Regular;
+    src: url(../resources/LibreBaskerville-Regular.ttf);
+}
+
+@font-face {
+    font-family: LibreBaskerville-Bold;
+    src: url(../resources/LibreBaskerville-Bold.ttf);
+}
+
+@font-face {
+    font-family: LibreFranklin-Regular;
+    src: url(../resources/LibreFranklin-Regular.ttf);
+}
+
+body {
+    font-family: 'LibreFranklin-Regular', sans-serif;
+}
+
+h1,
+h2{
+    font-family: 'LibreBaskerville-Regular', serif;
+}
+
+
+/* ------------------------------------------------ */
+/* General text styling */
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5em;
+    letter-spacing: 0.2px;
+    word-spacing: 0.4px;
+    color: #160303;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+
+h2{
+    font-weight: 400;
+}   
+
+header{
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+section > h2 + p{
+    text-indent: 20px;
+}
+
+section p ~ h2{
+    margin-top: 2lh;
+}
+
+/* ------------------------------------------------ */
+/* Links */
+
+a:link{
+    color:#a66;
+}
+
+a:visited{
+    color:#784848;
+}
+
+a:hover{
+    color:#84AB6F;
+    text-decoration: none;
+}
+
+a:active{
+    color: #74e995;
+}
+
+a:focus{
+    text-decoration: none;
+    outline: none;      
+}
+
+a[href^="https"]::after{
+    content: " ";
+    display: inline-block;
+    width: 1ch;
+    height: 1ch;
+    margin: 0 0.5ch;
+    background: center center url(../images/external-link-52.png);
+    background-size: cover;
+}
+
+a:hover[href^="https"]::after{
+    opacity: 0.5;
+}
+
+/* ------------------------------------------------ */
+/* Lists */
+ul{
+    /* It will be same as body because it's parent's value also inherit from body */
+    margin: inherit;
+}
+
+ol, li{
+    /* It will be same as body because it's parent's value also inherit from body */
+    line-height: inherit;
+}
+
+ul{
+    list-style: square;
+}
+
+ol{
+    list-style:upper-alpha;
+}
+
+/* ------------------------------------------------ */
+/* Navigation menu */
+
+nav > ul li a{
+    text-decoration: none;
+}
+
+nav > ul li{
+    text-align: center;
+    list-style: none;
+    border-bottom: solid #c5b7b7 1px;
+    padding: 1lh 0;
+}
+
+*{
+    box-sizing: border-box;
+}
